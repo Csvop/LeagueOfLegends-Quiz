@@ -1,0 +1,33 @@
+{
+    "bg": "https://th.bing.com/th/id/R03270207614733695710e0a27eee68d2?rik=L8%2faUpXBkalg7A&riu=http%3a%2f%2fs1.picswalls.com%2fwallpapers%2f2015%2f11%2f21%2fhd-league-of-legends-wallpapers_111238778_289.jpg&ehk=gjpXIWF0Gk4F44uRNOTBFf7DzFhRsWspiiyE8omJVtY%3d&risl=&pid=ImgRaw",
+    "title": "Titulo do Quiz",
+    "description": "Este é um quiz sobre o videogame e e-sport League of Legends feito por Bruno Garcia(Csvop).",
+    "questions": [
+      {
+        "image": "",
+        "title": "Questão numero 01",
+        "description": "Descricao",
+        "answer": 1,
+        "alternatives": [
+          "Alternativa A",
+          "Alternativa B",
+          "Alternativa C",
+          "Alternativa D"
+        ]
+      }
+    ],
+    "external": [
+      ""
+    ],
+    "theme": {
+      "colors": {
+        "primary": "#ffc107",
+        "secondary": "#d500f9",
+        "mainBg": "#171B35",
+        "contrastText": "#FFFFFF",
+        "wrong": "#FF5722",
+        "success": "#4CAF50"
+      },
+      "borderRadius": "4px"
+    }
+  }
