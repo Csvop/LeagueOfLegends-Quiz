@@ -5,19 +5,11 @@ import QuizLogo from '../src/components/QuizLogo'
 import QuizBackground from '../src/components/QuizBackground'
 import Footer from '../src/components/Footer'
 import GitHubCorner from '../src/components/GitHubCorner'
+import Button from '../src/components/Button';
 import LolQuizLogo from '../src/components/LolQuizlogo';
+import QuizContainer from '../src/components/QuizContainer';
+import Input from '../src/components/Input';
 import {useRouter} from "next/router";
-
-export const QuizContainer = styled.div`
-  width: 100%;
-  max-width: 350px;
-  padding-top: 45px;
-  margin: auto 10%;
-  @media screen and (max-width: 500px) {
-    margin: auto;
-    padding: 15px;
-  }
-`;
 
 export default function Home() {
   const router = useRouter();
@@ -36,14 +28,15 @@ export default function Home() {
               infosDoEvento.preventDefault();
               router.push(`/quiz?name=${name}`);
             }}>
-              <input placeholder="Insira seu nome"
-                onChange={function(infosDoEvento){
-                  setName(infosDoEvento.target.value);
-                }}
+              <Input
+                name="nomeDoUser"
+                onChange={function(infosDoEvento){setName(infosDoEvento.target.value);}}
+                placeholder="Insira seu nome"
+                value={name}
               />
-              <button type="submit" disabled={name.length === 0}>
-                Jogar {name}
-              </button>
+              <Button type="submit" disabled={name.length === 0}>
+                {`Jogar ${name}`}
+              </Button>
             </form>
           </Widget.Content>
         </Widget>
