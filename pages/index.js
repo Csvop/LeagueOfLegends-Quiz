@@ -46,7 +46,7 @@ export default function Home() {
             <h1>Outros quizes:</h1>
             <p href="https://www.alura.com.br/">- Marvel</p>
             <p href="https://www.alura.com.br/">- DC commics</p>
-            <p href="https://www.alura.com.br/">- Space an Beyond</p>
+            <p href="https://www.alura.com.br/">- Space and Beyond</p>
           </Widget.Content>
         </Widget>
         <Footer />
