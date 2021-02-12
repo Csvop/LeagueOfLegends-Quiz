@@ -1,7 +1,7 @@
 import React from 'react';
 import db from '../db.json';
 import Widget from '../src/components/Widget';
-import LolQuizLogo from '../src/components/LolQuizLogo';
+import LolQuizlogo from '../src/components/LolQuizlogo';
 import QuizBackground from '../src/components/QuizBackground';
 import QuizContainer from '../src/components/QuizContainer';
 import AlternativesForm from '../src/components/AlternativesForm';
@@ -195,7 +195,7 @@ export default function QuizPage() {
   return (
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
-        <LolQuizLogo />
+        <LolQuizlogo />
         {screenState === screenStates.QUIZ && (
           <QuestionWidget
             question={question}
